@@ -40,16 +40,16 @@ $(document).ready(function () {
     $('#red').on('click', function () {
         // console.log('Yep, they clicked!');
         if (randomNumber == 1) {
-          $('#color').text('<h3>Woohoo, that\'s red alright!</h3>');
+          $('#color').html('<h3>Woohoo, that\'s red alright!</h3>');
         } else {
-          $('#color').append('<h3>Not quite! Please try again.</h3>');
+          $('#color').html('<h3>Not quite! Please try again.</h3>');
         }
       });
 
     $('#orange').on('click', function () {
         // console.log('Yep, they clicked!');
         if (randomNumber == 2) {
-          $('#color').text('<h3><em>Orange</em> you glad you picked the right color?!</h3>');
+          $('#color').html('<h3><em>Orange</em> you glad you picked the right color?!</h3>');
         } else {
           $('#color').append('<h3>Not quite! Please try again.</h3>');
         }
@@ -58,7 +58,7 @@ $(document).ready(function () {
     $('#yellow').on('click', function () {
         // console.log('Yep, they clicked!');
         if (randomNumber == 3) {
-          $('#color').text('<h3><em>Hello</em>, that\'s <em>yellow!</em></h3>');
+          $('#color').html('<h3><em>Hello</em>, that\'s <em>yellow!</em></h3>');
         } else {
           $('#color').append('<h3>Not quite! Please try again.</h3>');
         }
@@ -67,7 +67,7 @@ $(document).ready(function () {
     $('#green').on('click', function () {
         // console.log('Yep, they clicked!');
         if (randomNumber == 4) {
-          $('#color').text('<h3>Super green! (Name that movie...)</h3>');
+          $('#color').html('<h3>Super green! (Name that movie...)</h3>');
         } else {
           $('#color').append('<h3>Not quite! Please try again.</h3>');
         }
