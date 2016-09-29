@@ -1,0 +1,28 @@
+body {
+  font-family: Gill Sans, Helvetica, sans-serif;
+  background-color: #bccacc;
+}
+
+#red {
+  background-color: red;
+}
+
+#orange {
+  background-color: orange;
+  font-size: 40px;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+.colors {
+  height: 100px;
+  width: 100px;
+  float: left;
+  border-radius: 100px;
+}
