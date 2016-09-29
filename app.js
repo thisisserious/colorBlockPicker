@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     console.log('Ready!'); //test to make sure all is linked correctly
 
     // assign variables to divs
