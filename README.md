@@ -7,5 +7,5 @@ This game prompts the user to pick a color. If they pick the correct color, they
 - Make it easy to add or remove color blocks using an array
 - Add timeout function
 
-# Authors
+# Author
 - Laura Abend
