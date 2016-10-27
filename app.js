@@ -1,6 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    console.log('Ready!'); //test to make sure all is linked correctly
+    // console.log('Ready!'); //test to make sure all are linked correctly
 
     // assign variables to divs
     var $red = $('<div class="colors" id="red"></div>');
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     //assign randomNumber to a var
     var randomNumber = randomNumber(1, 4);
-    console.log(randomNumber);
+    console.log('Random Number: ', randomNumber);
 
     //Provide instructions to the user on which color to pick
     if (randomNumber == 1) {
@@ -33,21 +33,19 @@ $(document).ready(function () {
       $('#color').append('<h3>Hey there! Please pick the color yellow.</h3>');
     } else if (randomNumber == 4) {
       $('#color').append('<h3>Oh hai! Please pick the color green.</h3>');
-    } else {
-      $('#color').append('<h3>Not quite!</h3>');
     }
 
     //Provide feedback to user based on which color they click
-    $('#red').on('click', function () {
+    $('#red').on('click', function() {
         // console.log('Yep, they clicked!');
         if (randomNumber == 1) {
           $('#color').html('<h3>Woohoo, that\'s red alright!</h3>');
         } else {
-          $('#color').html('<h3>Not quite! Please try again.</h3>');
+          $('#color').append('<h3>Not quite! Please try again.</h3>');
         }
       });
 
-    $('#orange').on('click', function () {
+    $('#orange').on('click', function() {
         // console.log('Yep, they clicked!');
         if (randomNumber == 2) {
           $('#color').html('<h3><em>Orange</em> you glad you picked the right color?!</h3>');
@@ -56,7 +54,7 @@ $(document).ready(function () {
         }
       });
 
-    $('#yellow').on('click', function () {
+    $('#yellow').on('click', function() {
         // console.log('Yep, they clicked!');
         if (randomNumber == 3) {
           $('#color').html('<h3><em>Hello</em>, that\'s <em>yellow!</em></h3>');
@@ -65,7 +63,7 @@ $(document).ready(function () {
         }
       });
 
-    $('#green').on('click', function () {
+    $('#green').on('click', function() {
         // console.log('Yep, they clicked!');
         if (randomNumber == 4) {
           $('#color').html('<h3>Super green! (Name that movie...)</h3>');
