@@ -64,7 +64,7 @@ $(document).ready(function() {
         $(this).fadeOut('slow');
         $(this).fadeIn('fast');
       } else {
-        $('#color').append('<h3>Not quite! Please try again.</h3>');
+        $('#color').html('<h3>Not quite! Please try again.</h3>');
       }
     });
 
